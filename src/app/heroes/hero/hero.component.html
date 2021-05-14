@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<h1>{{name}}</h1>
 
-</body>
-</html>
+<dl>
+  <td>Name: </td>
+  <dd>{{name}}</dd>
+  <td>Age: </td>
+  <dd>{{age}}</dd>
+
+  <td>Function: </td>
+  <dd>{{getName()}}</dd>
+  <td>Capitalized: </td>
+  <dd>{{nameCapitalized}}</dd>
+</dl>
+
+<button (click)="changeName()">
+  Change Hero
+</button>
+
+
+<button (click)="changeAge()">
+  Change Age
+</button>
